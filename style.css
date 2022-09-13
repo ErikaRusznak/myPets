@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(250, 128, 114, 0.419);
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 8px;
+  color: rgba(205, 92, 92, 0.778);
+  font-family: cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 200px;
+}
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  font-family: cursive;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.jinx {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.pretty {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn.sound {
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+  color: white;
+  font-size: 25px;
+}
+
+.btn.sound.ji {
+  background-image: url("imagesJinx/jinx4.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.btn.sound.pr {
+  background-image: url("imagesPretty/pretty4.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.btn.photos, .btn.video {
+  height: 40px;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+  background-color: rgba(205, 92, 92, 0.778);
+  color: white;
+}
+
+.btn.sound:hover {
+  color: burlywood;
+}
+
+.btn.sound.ji:active {
+  background-size: 150%;
+}
+
+.btn.photos:hover, .btn.video:hover {
+  color: rgb(125, 57, 57);
+  background-color: rgb(205, 92, 92);
+}
+
+.btn.sound.pr:active {
+  background-size: 120%;
+}
+
+/*
+
+.image-jinx.active {
+ display: none;
+}
+
+.image-pretty.active {
+  display: none;
+}
+
+.slider-container {
+  position: relative;
+  width: 750px;
+  height: 1000px;
+  overflow: hidden; only one photo will appear
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+  align-items: center; 
+}
+
+.image-jinx {
+ display: flex;
+ transition: transform 0.4s ease-in-out;
+}
+
+*/
