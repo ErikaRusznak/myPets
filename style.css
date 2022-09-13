@@ -64,7 +64,8 @@ h1 {
   text-align: center;
 }
 
-.btn.photos, .btn.video {
+.btn.photos,
+.btn.video {
   height: 40px;
   width: 100%;
   margin: 0px 0px 20px 0px;
@@ -80,7 +81,8 @@ h1 {
   background-size: 150%;
 }
 
-.btn.photos:hover, .btn.video:hover {
+.btn.photos:hover,
+.btn.video:hover {
   color: rgb(125, 57, 57);
   background-color: rgb(205, 92, 92);
 }
@@ -89,29 +91,70 @@ h1 {
   background-size: 120%;
 }
 
-/*
+
+.slider-container {
+  display: flex;
+  position: relative;
+  max-width: 530px;
+  max-height: 900px;
+  overflow: hidden; /*only one photo will appear*/
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.image-jinx {
+  
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+.image-pretty {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.changebutton {
+ position: absolute;
+ top: 50%;
+ color: white;
+ font-size: 30px;
+ transform: translateY(-50%);
+ opacity: 0.5;
+ cursor: pointer;
+}
+.photos.close-icon {
+ position: absolute;
+ top: 20px;
+ right: 10px;
+ color: white;
+ cursor: pointer;
+ opacity: 0.5;
+}
+
+.changebutton.prev {
+ left:10px;
+}
+.changebutton.next {
+ right:10px;
+}
+.changebutton:hover, .close-icon:hover {
+ opacity: 100%;
+}
+
+
+.buttons.active {
+  display: none;
+}
+
+h1.active {
+  display: none;
+}
 
 .image-jinx.active {
  display: none;
 }
 
+
 .image-pretty.active {
   display: none;
 }
 
-.slider-container {
-  position: relative;
-  width: 750px;
-  height: 1000px;
-  overflow: hidden; only one photo will appear
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
-  align-items: center; 
-}
-
-.image-jinx {
- display: flex;
- transition: transform 0.4s ease-in-out;
-}
-
-*/
