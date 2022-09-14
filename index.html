@@ -2,52 +2,58 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>My Pets</title>
- <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Pets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
- <h1> <i class="fa-solid fa-cat"></i> My Pets <i class="fa-solid fa-dog"></i> </h1>
+  <h1> <i class="fa-solid fa-cat"></i> My Pets <i class="fa-solid fa-dog"></i> </h1>
 
- <div class="buttons">
-  <div class="jinx">
-   <button class="btn sound ji">Jinx</button>
-   <button class="btn photos ji">Photos with Jinx</button>
-   <button class="btn video ji">Video with Jinx</button>
+  <div class="buttons">
+    <div class="jinx">
+      <button class="btn sound ji">Jinx</button>
+      <button class="btn photos ji">Photos with Jinx</button>
+      <button class="btn video ji">Video with Jinx</button>
+    </div>
+    <div class="pretty">
+      <button class="btn sound pr">Pretty</button>
+      <button class="btn photos pr">Photos with Pretty</button>
+      <button class="btn video pr">Video with Pretty</button>
+    </div>
   </div>
-  <div class="pretty">
-   <button class="btn sound pr">Pretty</button>
-   <button class="btn photos pr">Photos with Pretty</button>
-   <button class="btn video pr">Video with Pretty</button>
-  </div>
- </div>
 
- <div class="slider-container">
-  
-  <div class="image-jinx active">
-   <img src="imagesJinx/jinx1.jpeg" alt="image">
-   <img src="imagesJinx/jinx2.jpeg" alt="image">
-   <img src="imagesJinx/jinx3.jpeg" alt="image">
-  </div>
-  <div class="image-pretty active">
-   <img src="imagesPretty/pretty1.jpeg" alt="image">
-   <img src="imagesPretty/pretty2.jpeg" alt="image">
-   <img src="imagesPretty/pretty3.jpeg" alt="image">
+  <div class="slider-container">
+
+    <div class="image-jinx active">
+      <img src="imagesJinx/jinx1.jpeg" alt="image">
+      <img src="imagesJinx/jinx2.jpeg" alt="image">
+      <img src="imagesJinx/jinx3.jpeg" alt="image">
+    </div>
+    <div class="image-pretty active">
+      <img src="imagesPretty/pretty1.jpeg" alt="image">
+      <img src="imagesPretty/pretty2.jpeg" alt="image">
+      <img src="imagesPretty/pretty3.jpeg" alt="image">
+
+    </div>
+    <i class="fa-solid fa-angles-left changebutton prev "></i>
+    <i class="fa-solid fa-angles-right changebutton next "></i>
+    <i class="fa-solid fa-xmark photos close-icon"></i>
 
   </div>
-  <i class="fa-solid fa-angles-left changebutton prev"></i>
-  <i class="fa-solid fa-angles-right changebutton next"></i>
-  <i class="fa-solid fa-xmark photos close-icon"></i>
-  
-  
 
- <script src="index.js"></script>
+  <div class="video-container">
+    <video src="videoJinx.mp4" class="video-jinx active" controls></video>
+    <video src="videoPretty.mp4" class="video-pretty active" controls></video>
+    <i class="fa-solid fa-xmark videos close-icon active"></i>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

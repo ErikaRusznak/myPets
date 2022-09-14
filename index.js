@@ -38,7 +38,7 @@ const buttonsEl = document.querySelector(".buttons");
 const headerEl = document.querySelector("h1");
 const imageJinxEl = document.querySelector(".image-jinx");
 const imagePrettyEl = document.querySelector(".image-pretty");
-const closeIconEl = document.querySelector(".close-icon");
+const closeIconEl = document.querySelector(".photos.close-icon");
 
 photosJinx.addEventListener("click", () => {
   imageJinxEl.classList.remove("active");
@@ -66,19 +66,17 @@ const imgsEl = document.querySelectorAll(".slider-container");
 const imageJinxContainer = document.querySelector(".image-jinx");
 const imagePrettyContainer = document.querySelector(".image-pretty");
 
-// other photos for the cat
+// other photos
 
 let currentImg = 1;
 
 nextEl.addEventListener("click", () => {
   currentImg++;
-  
   updateImg();
 });
 
 prevEl.addEventListener("click", () => {
   currentImg--;
-  
   updateImg();
 });
 
@@ -93,9 +91,38 @@ function updateImg() {
     currentImg = 1;
   }
   imageJinxContainer.style.transform = `translateX(-${
-    (currentImg - 1) * 535
+    (currentImg - 1) * 540
   }px)`;
   imagePrettyContainer.style.transform = `translateX(-${
     (currentImg - 1) * 535
   }px)`;
 }
+
+
+const videoJinx = document.querySelector(".btn.video.ji");
+const videoPretty = document.querySelector(".btn.video.pr");
+const videoJinxEl = document.querySelector(".video-jinx");
+const videoPrettyEl = document.querySelector(".video-pretty");
+const closeIconVideoEl = document.querySelector(".videos.close-icon");
+
+videoJinx.addEventListener("click", ()=> {
+  buttonsEl.classList.add("active");
+  headerEl.classList.add("active");
+  videoJinxEl.classList.remove("active");
+  closeIconVideoEl.classList.remove("active");
+})
+
+videoPretty.addEventListener("click", ()=> {
+  buttonsEl.classList.add("active");
+  headerEl.classList.add("active");
+  videoPrettyEl.classList.remove("active");
+  closeIconVideoEl.classList.remove("active");
+})
+
+closeIconVideoEl.addEventListener("click", ()=> {
+  buttonsEl.classList.remove("active");
+  headerEl.classList.remove("active");
+  videoPrettyEl.classList.add("active");
+  videoJinxEl.classList.add("active");
+  closeIconVideoEl.classList.add("active");
+})
