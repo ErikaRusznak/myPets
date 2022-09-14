@@ -64,7 +64,6 @@ h1 {
   text-align: center;
 }
 
-
 .btn.photos,
 .btn.video {
   height: 40px;
@@ -78,7 +77,7 @@ h1 {
   height: 40px;
   width: 200px;
   background-color: rgba(205, 92, 92, 0.778);
-  color:white;
+  color: white;
 }
 
 .btn.sound:hover {
@@ -124,17 +123,17 @@ h1 {
   color: white;
   font-size: 30px;
   transform: translateY(-50%);
-  opacity: 0.5;
+  opacity: 0.8;
   cursor: pointer;
 }
 
 .photos.close-icon {
- position: absolute;
- top: 20px;
- right: 10px;
- color: white;
- cursor: pointer;
- opacity: 0.5;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .video-container video {
@@ -169,7 +168,6 @@ h1 {
   opacity: 100%;
 }
 
-
 .buttons.active {
   display: none;
 }
@@ -182,16 +180,9 @@ h1.active {
   display: none;
 }
 
-/*
-.changebutton.active {
-  display: none;
-}
-*/
-
 .image-pretty.active {
   display: none;
 }
-
 
 .video-jinx.active {
   display: none;
@@ -204,7 +195,6 @@ h1.active {
 .close-icon.videos.active {
   display: none;
 }
-
 
 .both.active {
   display: none;

@@ -31,6 +31,7 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
+const videoBothButton = document.querySelector(".both");
 // to open and close the photos
 const photosJinx = document.querySelector(".btn.photos.ji");
 const photosPretty = document.querySelector(".btn.photos.pr");
@@ -44,18 +45,21 @@ photosJinx.addEventListener("click", () => {
   imageJinxEl.classList.remove("active");
   buttonsEl.classList.add("active");
   headerEl.classList.add("active");
+  videoBothButton.classList.add("active");
 });
 
 photosPretty.addEventListener("click", () => {
   imagePrettyEl.classList.remove("active");
   buttonsEl.classList.add("active");
   headerEl.classList.add("active");
+  videoBothButton.classList.add("active");
 });
 closeIconEl.addEventListener("click", () => {
   imagePrettyEl.classList.add("active");
   imageJinxEl.classList.add("active");
   buttonsEl.classList.remove("active");
   headerEl.classList.remove("active");
+  videoBothButton.classList.remove("active");
 });
 
 const nextEl = document.querySelector(".next");
@@ -108,6 +112,7 @@ const closeIconVideoEl = document.querySelector(".videos.close-icon");
 videoJinx.addEventListener("click", () => {
   buttonsEl.classList.add("active");
   headerEl.classList.add("active");
+  videoBothButton.classList.add("active");
   videoJinxEl.classList.remove("active");
   closeIconVideoEl.classList.remove("active");
 });
@@ -115,12 +120,13 @@ videoJinx.addEventListener("click", () => {
 videoPretty.addEventListener("click", () => {
   buttonsEl.classList.add("active");
   headerEl.classList.add("active");
+  videoBothButton.classList.add("active");
   videoPrettyEl.classList.remove("active");
   closeIconVideoEl.classList.remove("active");
 });
 
 // video with both
-const videoBothButton = document.querySelector(".both");
+
 const videoBothEl = document.querySelector(".video-both");
 
 videoBothButton.addEventListener("click", () => {
@@ -136,6 +142,7 @@ videoBothButton.addEventListener("click", () => {
 closeIconVideoEl.addEventListener("click", () => {
   buttonsEl.classList.remove("active");
   headerEl.classList.remove("active");
+  videoBothButton.classList.remove("active");
   videoPrettyEl.classList.add("active");
   videoJinxEl.classList.add("active");
   videoBothEl.classList.add("active");
