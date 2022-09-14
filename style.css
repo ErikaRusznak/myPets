@@ -20,7 +20,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 200px;
+  column-gap: 130px;
 }
 
 .btn {
@@ -64,6 +64,7 @@ h1 {
   text-align: center;
 }
 
+
 .btn.photos,
 .btn.video {
   height: 40px;
@@ -71,6 +72,13 @@ h1 {
   margin: 0px 0px 20px 0px;
   background-color: rgba(205, 92, 92, 0.778);
   color: white;
+}
+
+.btn.both {
+  height: 40px;
+  width: 200px;
+  background-color: rgba(205, 92, 92, 0.778);
+  color:white;
 }
 
 .btn.sound:hover {
@@ -197,3 +205,11 @@ h1.active {
   display: none;
 }
 
+
+.both.active {
+  display: none;
+}
+
+.video-both.active {
+  display: none;
+}

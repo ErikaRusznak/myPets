@@ -98,31 +98,46 @@ function updateImg() {
   }px)`;
 }
 
-
+// videos with them
 const videoJinx = document.querySelector(".btn.video.ji");
 const videoPretty = document.querySelector(".btn.video.pr");
 const videoJinxEl = document.querySelector(".video-jinx");
 const videoPrettyEl = document.querySelector(".video-pretty");
 const closeIconVideoEl = document.querySelector(".videos.close-icon");
 
-videoJinx.addEventListener("click", ()=> {
+videoJinx.addEventListener("click", () => {
   buttonsEl.classList.add("active");
   headerEl.classList.add("active");
   videoJinxEl.classList.remove("active");
   closeIconVideoEl.classList.remove("active");
-})
+});
 
-videoPretty.addEventListener("click", ()=> {
+videoPretty.addEventListener("click", () => {
   buttonsEl.classList.add("active");
   headerEl.classList.add("active");
   videoPrettyEl.classList.remove("active");
   closeIconVideoEl.classList.remove("active");
-})
+});
 
-closeIconVideoEl.addEventListener("click", ()=> {
+// video with both
+const videoBothButton = document.querySelector(".both");
+const videoBothEl = document.querySelector(".video-both");
+
+videoBothButton.addEventListener("click", () => {
+  buttonsEl.classList.add("active");
+  headerEl.classList.add("active");
+  videoBothButton.classList.add("active");
+  videoBothEl.classList.remove("active");
+  closeIconVideoEl.classList.remove("active");
+});
+
+// closing icon
+
+closeIconVideoEl.addEventListener("click", () => {
   buttonsEl.classList.remove("active");
   headerEl.classList.remove("active");
   videoPrettyEl.classList.add("active");
   videoJinxEl.classList.add("active");
+  videoBothEl.classList.add("active");
   closeIconVideoEl.classList.add("active");
-})
+});
